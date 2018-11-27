@@ -27,29 +27,29 @@ end
 良い例:
 ```ruby
 class Foo
-	def hoge_1()
-		...
-	end
+  def hoge_1()
+    ...
+  end
 
-	def hoge_2()
-		...
-	end
+  def hoge_2()
+    ...
+  end
 end
 
 class Bar
-	...
+  ...
 end
 ```
 
 悪い例:
 ```ruby
 class Foo
-	def hoge_1()
-		...
-	end
-	def hoge_2()
-		...
-	end
+  def hoge_1()
+    ...
+  end
+  def hoge_2()
+    ...
+  end
 end
 class Bar
 	...
