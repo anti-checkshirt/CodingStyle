@@ -5,19 +5,22 @@
 
 ## インデント
 - インデントの幅は2つとする。
+
+良い例:
 ```ruby
-# 良い例
+if a < 0
+  return true
+else
+  return false
+end
+```
+
+悪い例:
+```ruby
 if a < 0
     return true
 else
     return false
-end
-
-# 悪い例
-if a < 0
-        return true
-else
-        return false
 end
 ```
 
@@ -27,7 +30,7 @@ end
 良い例:
 ```ruby
 class Foo
-  def hoge_1()
+  def self.hoge_1()
     ...
   end
 
@@ -44,14 +47,56 @@ end
 悪い例:
 ```ruby
 class Foo
-  def hoge_1()
+  def self.hoge_1()
     ...
   end
-  def hoge_2()
+  def self.hoge_2()
     ...
   end
 end
 class Bar
-	...
+  ...
+end
+```
+
+## メソッドの定義
+- メソッドの定義の際、引数有無に関わらず括弧をつける。  
+
+良い例:
+```ruby
+def str(x, y)
+  ...
+end
+
+def str()
+  ...
+end
+```
+
+悪い例:
+```ruby
+def str
+  ...
+end
+```
+
+## クラスメソッドの定義
+- クラスメソッドを定義する場合は必ず先頭にselfを付ける。  
+
+良い例:
+```ruby
+class Hoge
+  def self.hoge
+    ...
+  end
+end
+```
+
+悪い例:
+```ruby
+class Hoge
+  def Hoge.hoge
+    ...
+  end
 end
 ```
