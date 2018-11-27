@@ -15,9 +15,9 @@ end
 
 # 悪い例
 if a < 0
-	return true
+		return true
 else
-	return false
+		return false
 end
 ```
 
