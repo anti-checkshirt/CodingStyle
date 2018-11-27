@@ -117,3 +117,22 @@ foo x, y
 Foo.foo x, y 
 foo
 ```
+
+## ブロック
+ブロックは、do〜endを必ず使用する。
+
+良い例:
+```ruby
+list.each do |i|
+  ...
+end
+```
+
+悪い例:
+```ruby
+list.each { |i|
+  ...
+}
+```
+
+
