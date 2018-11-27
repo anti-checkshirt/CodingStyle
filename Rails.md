@@ -135,4 +135,44 @@ list.each { |i|
 }
 ```
 
+## return
+メソッドが値を返す際は、必ずreturnを使用すること。
 
+例:
+```ruby
+def return_str(str)
+  return str
+end
+```
+
+## 条件分岐
+- ネストを深くしすぎてはならない。
+
+- if !x という条件になる際は、unless x にすること。
+
+良い例:
+```ruby
+if !hoge
+  ...
+end
+```
+
+悪い例
+```ruby
+unless hoge
+  ...
+end
+```
+- ifが一行で済む際は後置ifを使用すること。ただし、行数が39文字以内に抑えられない場合はこれを使用しない。
+
+良い例:
+```ruby
+return x if x = 0
+```
+
+悪い例:
+```ruby
+if x = 0
+  return x
+end
+```
