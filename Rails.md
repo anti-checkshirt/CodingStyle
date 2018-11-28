@@ -228,6 +228,7 @@ end
 - 単語は全て小文字とする。
 - 単語ごとに'_'で区切る。
 
+例:
 ```ruby
 local_variable
 @instance_variable
