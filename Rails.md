@@ -189,3 +189,47 @@ end
 return "こんにちは。今日はいい天気ですね。散歩にでも行きましょう。サイクリングに行くのもいいですね。" if message.nil?
 ```
 
+## 命名規則
+### クラス・モジュール名
+- 単語の一文字目は大文字とする。
+- 単語ごとに'_'で区切ってはならない。 
+
+良い例:
+```ruby
+class ExampleClient
+  ...
+end
+```
+悪い例:
+```ruby
+class example_client
+  ...
+end
+```
+### メソッド名
+- 単語は全て小文字とする。
+- 単語ごとに'_'で区切る。
+- 最初の単語は動詞とする。
+
+良い例:
+```ruby
+def add_fruit
+  ...
+end
+```
+
+悪い例:
+```ruby
+def Fruit_Add
+  ...
+end
+```
+### 変数名
+- 単語は全て小文字とする。
+- 単語ごとに'_'で区切る。
+
+```ruby
+local_variable
+@instance_variable
+$global_variable
+```
